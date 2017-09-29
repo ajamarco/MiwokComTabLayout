@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#fff7da"
+        android:id="@+id/layout_image">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageView_icon"
+
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:paddingLeft="16dp"
+        android:background="#fd8e09"
+        android:id="@+id/layout_Words"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+
+            <TextView
+                android:id="@+id/textView_Miwok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Lutti"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/textView_Default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="One"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_below="@id/textView_Miwok"
+
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_play_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
